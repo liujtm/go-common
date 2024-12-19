@@ -53,8 +53,7 @@ func ModifyReqPagenoAndCount(req interface{}, maxAllowedCount int64) error {
 	}
 
 	if count.Int() > maxAllowedCount {
-		errMsg := fmt.Sprintf("count:%+v is too large, allowed max count:%+v", count.Int(), maxAllowedCount)
-		return fmt.Errorf(errMsg)
+		return fmt.Errorf("count:%+v is too large, allowed max count:%+v", count.Int(), maxAllowedCount)
 	}
 
 	return nil
