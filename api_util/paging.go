@@ -13,13 +13,13 @@ const (
 	DefaultMaxAllowedCount = 10000
 )
 
-// 分页参数请求
+// 分页参数请求，可以被其他结构体匿名组合使用
 type PagingReq struct {
 	Pageno int64 `json:"pageno"` // 第几页
 	Count  int64 `json:"count"`  // 每页几条数据
 }
 
-// 分页参数返回
+// 分页参数返回，可以被其他结构体匿名组合使用
 type PagingResp struct {
 	Pageno int64 `json:"pageno"` // 第几页
 	Count  int64 `json:"count"`  // 每页几条数据
