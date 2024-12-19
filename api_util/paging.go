@@ -1,6 +1,6 @@
 package apiutil
 
-// 分页接口规范
+// 分页接口规范：入参必须有 pageno count 出参必须有 pageno count total
 
 import (
 	"fmt"
