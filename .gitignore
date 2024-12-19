@@ -1,0 +1,8 @@
+.idea
+log
+.vscode
+go.sum
+tmp
+.DS_Store
+*.png
+*.jpg
